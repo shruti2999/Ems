@@ -8,7 +8,6 @@ const Login = ({handleLogin}) => {
   const submitHandler=(e)=>{
     e.preventDefault()
     handleLogin(email,password)
-
     setEmail("")
     setPassword("")
   }
@@ -30,7 +29,8 @@ const Login = ({handleLogin}) => {
           onChange={(e)=>{
             setPassword(e.target.value)
           }} 
-          required className= "  mt-3 outline-none bg-transparent border-2 border-emerald-600 text-xl py-3 px-5  rounded-full placeholder :text-white" type='password' placeholder='Enter password'/>
+          required
+          className= "  mt-3 outline-none bg-transparent border-2 border-emerald-600 text-xl py-3 px-5  rounded-full placeholder :text-white" type='password' placeholder='Enter password'/>
           <button className= "text-white mt-5 outline-none border-2 bg-emerald-600 text-xl py-3 px-5 rounded-full  placeholder :text-white">Log in</button>
         </form>
       </div> 

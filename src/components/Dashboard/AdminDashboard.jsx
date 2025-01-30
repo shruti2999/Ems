@@ -10,7 +10,7 @@ const AdminDashboard = (props) => {
       <CreateTask/>
       <AllTask/>
     </div>
-  );
-};
+  )
+}
 
 export default AdminDashboard;
